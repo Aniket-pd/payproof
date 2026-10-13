@@ -17,6 +17,8 @@ npm run dev
 
 Open [http://127.0.0.1:4318](http://127.0.0.1:4318) and choose **Run the 2-case comparison**. The result compares three teaching controls on identical inputs: a planted cumulative-limit defect, blanket refusal, and the corrected reference. It saves three runs and preserves your policy, scenarios, and approvals. Case links and JSON exports expose the evidence; the comparison survives reload. The server listens on the loopback interface. The default simulator needs no credentials.
 
+Installation restores the optional Codex launcher's executable permission, which ZIP extractors may drop. If you intentionally install with lifecycle scripts disabled, run `node scripts/prepare-runtime.mjs` before using live AI.
+
 With Codex connected, **Run a fresh Codex check** evaluates a real model response on the same saved inputs. Its saved request ID recovers the result after reload and prevents duplicate execution. Failed or interrupted requests remain visible; they never produce teaching-agent fallback output. All payments on this page are simulated.
 
 For the full suite, open [the test lab](http://127.0.0.1:4318/app):
