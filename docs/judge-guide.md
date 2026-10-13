@@ -45,6 +45,8 @@ For fresh inference, run `npm run dev`, open the landing page, run the compariso
 
 ## Inspect beyond the two-case demonstration
 
+For **fresh AI without a paid account**, follow [local AI judging](local-ai-judging.md). `npm run judge:local` uses the local Qwen3 0.6B model through Ollama, retains its exact answer and independently evaluates it. It requires the additional runtime and model download. The first observed run failed the excess-refund case and left the permitted case inconclusive on its reply; those results are preserved. This is a separate local-model path, not free access to Codex.
+
 ```sh
 npm run check
 npm run dev

@@ -63,7 +63,13 @@ This creates fresh teaching controls, validates the bundled synthetic [recorded 
 
 No server, AI account, PayPal account, or new model request is needed. The packaged file's historical model/thread claims remain unauthenticated; replay verifies input binding and current simulated outcomes. Two curated cases are not a model benchmark. See the [judge guide](docs/judge-guide.md) for inspection commands and limits, and the [current evaluation](docs/judging/2026-10-14-report.md) for remaining submission gaps. The [developer evaluation worksheet](docs/developer-evaluation.md) provides a short, account-free way to give feedback; no outside sessions have been completed yet.
 
+## Fresh local AI without an account
+
+For fresh AI without an account or API key, use the [local Ollama judging path](docs/local-ai-judging.md): install Ollama, run `ollama pull qwen3:0.6b`, then `npm run judge:local`. It records a new local-model response and evaluates it with simulator payments. The first observed run caught a $5 policy excess and retained an inconclusive customer-message check; see the [exact artifacts](examples/recorded-local-ai/README.md). The approximately 523 MB model download and local compute are additional setup requirements. This path does not use Codex or call PayPal.
+
 ## Run the broader fixed AI challenge
+
+The broader fixed **Codex** challenge is separate from the local-model path:
 
 ```sh
 npm run challenge
@@ -115,6 +121,7 @@ Sandbox runs are saved before execution. Each request identity is recorded befor
 | --- | --- |
 | PayPal Orders v2 and Payments v2 REST APIs | Sandbox order approval, capture, partial refund and refund readback |
 | Official OpenAI Codex SDK + Codex CLI | Optional scenario generation and live agent decisions using the local account |
+| Ollama + local Qwen3 0.6B | Optional fresh account-free decisions through the external-agent contract; simulator evaluation |
 | React, TypeScript, Vite, Lucide | Interactive test lab, evidence views and build tooling |
 | Node.js, Express | Local API, deterministic verifier, persistence and adapter orchestration |
 | Node test runner + injected dependencies | Reproducible engine, adapter and HTTP checks without real payment calls |

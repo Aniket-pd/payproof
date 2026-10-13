@@ -36,7 +36,7 @@ The five criteriaâ€”implementation, design, impact, innovation and presentationâ
 - [ ] Reviewer access arranged for optional live AI without publishing a subscription token or exposing the local authenticated server.
 - [ ] Devpost form completed and explicitly submitted by the entrant.
 
-The simulator is available without an account. Full interactive AI uses an authorized local Codex account; the final entry must explain reviewer access to that functionality. PayPal Sandbox needs a test app and buyer approval. Do not present those dependencies as already solved by a working simulator.
+The simulator is available without an account. The new [local-model path](local-ai-judging.md) also generates fresh AI decisions without an account or API key, then brings its evidence into the dashboard. It requires Ollama, a model download and local compute. The direct Codex buttons still use an authorized local Codex account. PayPal Sandbox needs a free test app and buyer approval. The revised source must be published and verified before marking the new judging path publicly available.
 
 ## Draft description
 
@@ -49,5 +49,7 @@ The opening comparison makes a critical distinction visible: a solution that ref
 The initial scope is USD courtesy refunds and controlled fixtures. Seeded defects demonstrate test sensitivity; they are not claims about model failure rates or PayPal vulnerabilities. Results do not certify production safety. The next validation step is to test the workflow with developers integrating their own refund agents and measure time to a useful reproducible failure.
 
 **Build disclosure:** Codex assisted development. Optional runtime AI uses the official OpenAI Codex SDK and local CLI authentication. PayPal integration uses Orders v2 and Payments v2 REST APIs; the interface uses React, TypeScript and Vite, with a Node/Express local server. No sponsor tool integration is claimed unless listed in the README.
+
+An additional local judging path uses Ollama with Qwen3 0.6B and requires no account or API key. Its first retained two-case response produced a $5 simulated policy excess and an inconclusive customer-message check. The result demonstrates detection on one small-model synthetic batch; it is not a benchmark or a production failure rate. The recorded Codex + actual PayPal Sandbox experiment remains separate.
 
 Repository URL: [https://github.com/Aniket-pd/payproof](https://github.com/Aniket-pd/payproof). Before submitting the entry, add the public video URL, free judging-access arrangement, and an honest account of what was built during the hackathon. Keep unverified outcomes conditional.
