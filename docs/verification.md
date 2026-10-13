@@ -2,6 +2,18 @@
 
 ## Current checkpoint — 14 October 2026 IST
 
+This section describes current readiness. The dated historical records below retain their original observations and limits.
+
+| Requirement | Current evidence |
+| --- | --- |
+| Actual AI and PayPal Sandbox | Five captured test orders, corrected controls and a fresh two-case Codex batch with independent refund readbacks: [Sandbox verification](sandbox-verification.md). |
+| Public source and reproducibility | [Public repository](https://github.com/Aniket-pd/payproof), anonymously checked source and [188-test Ubuntu CI](https://github.com/Aniket-pd/payproof/actions/runs/38465439096). |
+| Fresh AI without a paid account | Published and exercised [Ollama + Qwen3 setup](local-ai-judging.md); a local model download and compute are required. |
+| Demonstration | Verified local 2:38.5 film with actual Sandbox evidence; YouTube publication remains unfinished. |
+| Impact and entry | Outside developer feedback, entrant confirmations, official form verification and final submission remain incomplete. |
+
+The [current evaluation](judging/2026-10-14-report.md) remains **40.5/50**, with Impact **7.0**. Public source, local fresh-AI access and actual Sandbox observations are completed milestones. They do not establish user benefit or a submitted entry.
+
 Iteration 12 adds a fresh account-free local-model path through Ollama and Qwen3 0.6B. The first complete response is retained unchanged in `examples/recorded-local-ai/`: one failed case with $5 simulated excess, one inconclusive case, no fully passing cases. Inference took 6.867 seconds on an Apple M3 / 16 GiB Mac with Ollama 0.32.15. Offline replay preserved both decisions, verdicts and amounts. No new PayPal or Codex request occurred, and the main workspace state hash remained unchanged. The revised implementation passes **188 tests**, TypeScript and production build, both locally and in a fresh extraction. Six local-model checks cover opaque inputs, local/cloud identity, malformed and truncated responses, changing model metadata, bounded input/output and failure-preserving replay. All 194 anonymously fetched public source files match the reviewed package, and [both GitHub CI jobs pass](https://github.com/Aniket-pd/payproof/actions/runs/38463647640). The setup is in [local AI judging](local-ai-judging.md). This closes the account-free local AI access milestone; public video, entrant confirmation, final submission and outside feedback remain unfinished.
 
 Actual Sandbox verification now covers five fresh captured orders with independently completed opening refunds, the seeded over-refund, both corrected controls, and a fresh two-case Codex batch. The seeded defect failed as intended; all four corrected/Codex cases passed with complete readbacks. Exact exports are in `examples/recorded-paypal/`; all four validate and replay offline with unchanged decisions/verdicts/amounts and Simulator provenance. No application-code change was needed. A fresh 179-file extraction passed 182 tests, TypeScript/build, both judge commands, the recorded Sandbox replay and presentation checks. The updated 4,755-frame MP4 is 158.507 seconds, fully decodes, and plays at ready state 4 without a media error. The prior policy, 27 scenarios and 57 runs are preserved. See [Sandbox verification](sandbox-verification.md) for IDs, evidence scope and limits.
@@ -13,9 +25,9 @@ The sections below preserve earlier checkpoints; their unverified-Sandbox and un
 Iteration 10 corrected the external-agent documentation to pass the schema-2 request to the agent and the separate schema-1 fixture to the evaluator. An actual local CLI dry run reproduced the old schema error and verified the corrected instructions: seeded decisions exit 1 with one failed case and $5 excess; corrected decisions exit 0 with 2/2 passing and the permitted $5 refund retained. This was a synthetic command check, not a human evaluation. The [participant worksheet](developer-evaluation.md) and [facilitator protocol](developer-evaluation-guide.md) are prepared; no outside responses exist. The refreshed 181-file package changes documentation only relative to the tested implementation.
 
 
-## Current improvement run
+## Historical record — iterations 1–7, 13 October 2026
 
-Thirteen focused iterations are recorded in [the current progress log](judging/2026-10-13-progress.md) and [evaluation](judging/2026-10-14-report.md). This pass was implemented and assessed by the same agent; it is not an independent review panel. The detailed observations below preserve earlier checkpoints and their original scope.
+The observations in this section precede actual Sandbox verification and source publication. Their status statements apply to 13 October, not the current release. Later work is recorded in [the progress log](judging/2026-10-13-progress.md) and [current evaluation](judging/2026-10-14-report.md). The ongoing improvement run is implemented and assessed by the same agent; it is not an independent review panel.
 
 - **182 automated tests, TypeScript and the production build pass.** New checks cover the isolated three-control proof, real-AI request identity/reload recovery, failed and interrupted requests, malformed decisions, the portable judge command, and restoration of the Codex launcher after ZIP extraction. Latest clean log: `artifacts/improvement-2026-10-13/iteration7-revised-clean-check.log`.
 - Sandbox execution now persists a report before provider calls, retains request/response/readback events and completed cases, and stops on persistence failure. A controlled browser test killed the isolated server after one mocked refund response. Restart recovered the same inconclusive report and known IDs, with zero provider calls while viewing it. The fixture link, unconfirmed metrics, and 390px layout were verified. This is mocked-provider recovery evidence, not a successful PayPal Sandbox run. See `sandbox-recovery-report.json` and recovery screenshots under `artifacts/improvement-2026-10-13/`.
@@ -31,13 +43,13 @@ Thirteen focused iterations are recorded in [the current progress log](judging/2
 - The narrated local rehearsal exported **4,739 frames**, with container duration **157.973 seconds**, 1920×1080/30 fps, H.264/AAC and 12,270,029 bytes. Full FFmpeg decode passed. Browser playback reported ready state 4, 1920×1080, and no error while playing, then paused at 41.334 seconds. Peak audio was −3.0 dBFS and maximum detected silence 1.997 seconds. Captions validate across eight source clips and 73 pages. Representative frames across all scenes were reviewed, including source labels and uncertainty. Evidence: `video-verification.json`, `video-probe.json`, `video-decode.log`, and `video-playback.jpg`. This is an edited rehearsal using generated stock narration and saved screenshots; it is not actual PayPal execution or public delivery.
 - Iteration 7's final **169-file candidate** adds a pinned, read-only GitHub Actions workflow and repairs an actual fresh-install failure: ZIP extraction removed the optional Codex runner's executable bit. A new extraction on Node.js 24.8.0 passed normal `npm ci`, all **182 tests**, build, both evidence commands, source packaging and the presentation checks. The runner also launched successfully after installation; an unsupported command stops before any inference. A regression observes `EACCES` on a deliberately non-executable copy, then proves installation repairs it. Workflow YAML and permission/pin structure were checked separately. Final documentation-only notes were synchronized after verification. The isolated local repository excludes generated outputs and user/account state. Logs and candidate metadata are `iteration7-*` under `artifacts/improvement-2026-10-13/`. Publication and remote Ubuntu CI have not run; approval is pending.
 
-Actual PayPal Sandbox execution, external developer feedback, public delivery and final submission remain unverified. See the [judge guide](judge-guide.md) for the reproducible local path and its limits.
+At this checkpoint, actual PayPal Sandbox execution, external developer feedback, public delivery and final submission were unverified. The current status is in the table above; use the [judge guide](judge-guide.md) for today's reproducible local path and its limits.
 
 ## Historical review — 10 October 2026
 
 PayProof was built and exercised locally on macOS with Node 24.8.0. Eleven implemented improvement rounds are recorded in [the iteration log](judging/iteration-log.md) and [the final report](judging/final-report.md). Actual AI execution and simulator evidence are verified; actual PayPal Sandbox execution is still unverified.
 
-## Historical build
+### Historical build — 10 October 2026
 
 - **163 automated tests passed**, followed by TypeScript checking and a Vite production build. Coverage includes policy and capture boundaries, independent readbacks, invalid AI decisions, decision bundles, replay lineage and input validation, manual and paired cases, archive/restore, evidence import, comparison eligibility, and HTTP guards.
 - PayPal adapter, interrupted-preparation and opening-capture checks use **mocked HTTP responses**. These tests do not establish that the account flow works against PayPal's Sandbox.
@@ -46,7 +58,7 @@ PayProof was built and exercised locally on macOS with Node 24.8.0. Eleven imple
 
 The round-seven reviewer found an import limit that rejected long replay ancestry emitted by the app. Iterative lineage validation now preserves the complete chain under the existing byte budget. The regression suite tests 30 generations, malformed oldest ancestry and cycles; the reviewer independently repeated 30 replay/export/import cycles successfully.
 
-## Rendered browser verification
+### Rendered browser verification — 10 October 2026
 
 The landing, test configuration, evidence details, scenario library/editor, history/comparison, Connections, policy controls and Quickstart were exercised during the review. Independent reviewers repeated the core journey and mobile checks.
 
@@ -64,7 +76,7 @@ The landing, test configuration, evidence details, scenario library/editor, hist
 
 Local browser artifacts include `artifacts/judge-loop/iteration-7-imported-evidence.jpg`, `iteration-7-comparison.jpg`, `iteration-7-mobile-import-error.jpg`, and the round-six screenshots above. Earlier refresh-failure evidence remains in the same directory. These are local evidence and intentionally excluded from the public source archive.
 
-## Additional verification through review pass fourteen
+### Additional verification through review pass fourteen — 10 October 2026
 
 - Failure recovery after reload: a gated mock generation failure reappeared as a focused, dismissible notification; dismissal survived reload. Server operation status is in memory and does not survive a server restart.
 - Long-operation recovery: a gated mock generation remained visible after navigation and reload, disabled conflicting writes, and automatically refreshed the library after completion. API tests cover success, failure and conflicts.
@@ -76,7 +88,7 @@ Local browser artifacts include `artifacts/judge-loop/iteration-7-imported-evide
 
 Reviews 13 and 14 independently found no significant actionable local weaknesses and passed the core journey, meeting the original early-stop rule after seven additional review passes. Review 13 passed 46 targeted tests and a 13-case corrected suite (11 passed, two intentionally inconclusive). Review 14 passed 12 targeted tests, fresh seeded/corrected/replay/comparison, editor validation, malformed-import recovery and mobile navigation. Neither made AI or PayPal calls. Reports: `artifacts/audit-r13/review.md` and `artifacts/audit-r14/review.md`.
 
-## Genuine AI observations
+### Genuine AI observations — through 10 October 2026
 
 The official Codex CLI/SDK **0.162.0** used the existing ChatGPT sign-in without an OpenAI API key. The CLI default model was selected; its exact model revision was not resolved. These observations are not a pinned-model benchmark.
 
@@ -88,8 +100,8 @@ The official Codex CLI/SDK **0.162.0** used the existing ChatGPT sign-in without
 
 Every payment record in these observations came from the simulator. The live AI output is real; the money evidence is synthetic. Small curated test suites do not establish model reliability, real-world failure rates, money saved or user adoption.
 
-## Exact remaining blocker
+### Blockers recorded on 10 October 2026
 
-The final local status check reports `paypal.configured=false`, with no actual Sandbox fixtures. The next step is to configure `PAYPAL_CLIENT_ID` and `PAYPAL_CLIENT_SECRET` in the local `.env` using Sandbox credentials, restart the server, approve a fixture with a separate Sandbox buyer, then capture, refund and export independent readback evidence. Do not paste credentials into chat or publish the authenticated local server.
+The 10 October local status check reported `paypal.configured=false`, with no actual Sandbox fixtures. That account-access blocker was subsequently resolved, and actual execution is documented in [Sandbox verification](sandbox-verification.md). The earlier check remains part of the historical record; it does not describe the current application state.
 
-Public repository, public YouTube demonstration, free judge access and the final Devpost entry remain unfinished; see [submission readiness](submission.md). External developer/customer feedback is also still missing. Imported decision evaluation tests decisions while PayProof owns execution and retries. Evidence-file import preserves unverified claims; a separate simulator replay checks saved inputs without authenticating the file's AI or provider history. Current policy scope is USD courtesy refunds and bounded English completion wording.
+At that checkpoint, the public repository, YouTube demonstration, free judge access and final Devpost entry were unfinished. Current remaining actions are tracked in [submission readiness](submission.md). The evidence limits still apply: imported decision evaluation tests decisions while PayProof owns execution and retries; evidence-file import preserves unverified claims; a separate simulator replay checks saved inputs without authenticating the file's AI or provider history. Policy scope remains USD courtesy refunds and bounded English completion wording.

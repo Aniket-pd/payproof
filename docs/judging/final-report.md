@@ -1,5 +1,7 @@
 # Final independent review — 10 October 2026
 
+**Historical review.** This document preserves the 10 October findings and scores. Later actual Sandbox verification, public source and account-free local AI access are covered in the [current checkpoint](2026-10-14-report.md). Statements below about unfinished work apply to the review date.
+
 **The latest extension ended after seven additional review passes (8–14), including four rounds of implemented fixes.** Two consecutive independent reviews (13 and 14) found no significant actionable local weaknesses, and both repeated the core demo successfully. This meets the user's early-stop rule; the remaining three passes under the ten-pass cap were not performed. Eleven implementation rounds were completed across the full engagement.
 
 PayProof is a stronger local developer prototype. Actual PayPal Sandbox execution, public submission materials and external user validation remain unfinished. The stopping decision applies to actionable local defects within the authorized work; it does not mean the submission is complete or the product is defect-free.
