@@ -6,6 +6,8 @@ PayProof is a local developer application built for the PayPal AI Hackathon. It 
 
 [Public source](https://github.com/Aniket-pd/payproof) · [Verification runs](https://github.com/Aniket-pd/payproof/actions/workflows/verify.yml) · [Judge guide](docs/judge-guide.md)
 
+Built for developers reviewing a refund decision component before changing its prompt, model or code. See the [problem evidence and intended workflow](docs/problem-evidence.md) for primary sources, demonstrated results and the benefits that still need outside validation.
+
 The styled Quickstart is available at [http://127.0.0.1:4318/app?view=docs](http://127.0.0.1:4318/app?view=docs) while the local server is running.
 
 ## Run locally

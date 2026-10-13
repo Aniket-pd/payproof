@@ -29,18 +29,20 @@ The five criteriaâ€”implementation, design, impact, innovation and presentationâ
 - [x] Portable synthetic AI export and one-command judge reproduction: `npm run judge:verify`; see `judge-guide.md` for provenance limits.
 - [x] Source package: clean install, automated suite, TypeScript and production build verified; see `verification.md` for the final test count and evidence.
 - [ ] Customer or developer feedback collected; replace any hypothetical impact claim with evidence. The [participant worksheet](developer-evaluation.md) and [predefined evaluation guide](developer-evaluation-guide.md) are prepared; no sessions have been completed.
-- [x] Public repository created; all 181 anonymously cloned files match the reviewed allowlist. Credentials and private runtime artifacts are excluded.
-- [x] Read-only, pinned CI passed on GitHub's Ubuntu runner: 182 tests, TypeScript/build, both offline reports, packaging and presentation checks. [Initial successful run](https://github.com/Aniket-pd/payproof/actions/runs/38460136404).
+- [x] Public repository created; anonymously fetched source matches the reviewed allowlist. Credentials and private runtime artifacts are excluded.
+- [x] Read-only, pinned CI passed on GitHub's Ubuntu runner: 188 tests, TypeScript/build, both offline reports, packaging and presentation checks. [Local-AI verification run](https://github.com/Aniket-pd/payproof/actions/runs/38463647640).
 - [x] Editable local 2:39 demonstration updated with app captures, recorded AI evidence, captions and separately labeled actual Sandbox results. See `presentation/README.md`.
 - [ ] Final actual-Sandbox demonstration published publicly on YouTube and checked in a signed-out browser.
 - [x] Fresh local AI available for reviewers through the published `judge:local` command and setup guide, without sharing subscription credentials.
 - [ ] Devpost form completed and explicitly submitted by the entrant.
 
-The simulator is available without an account. The published [local-model path](local-ai-judging.md) also generates fresh AI decisions without an account or API key, then brings its evidence into the dashboard. It requires Ollama, a model download and local compute. The direct Codex buttons still use an authorized local Codex account. PayPal Sandbox needs a free test app and buyer approval. Anonymous access to all 194 files of the revised source and [188-test CI](https://github.com/Aniket-pd/payproof/actions/runs/38463647640) are verified.
+The simulator is available without an account. The published [local-model path](local-ai-judging.md) also generates fresh AI decisions without an account or API key, then brings its evidence into the dashboard. It requires Ollama, a model download and local compute. The direct Codex buttons still use an authorized local Codex account. PayPal Sandbox needs a free test app and buyer approval. Anonymous access to the local-AI revision and [188-test CI](https://github.com/Aniket-pd/payproof/actions/runs/38463647640) are verified.
 
 ## Draft description
 
 **PayProof Refunds** is a local release-testing workbench for developers building refund agents. An agent can stay below the original purchase amount while violating a merchant's smaller cumulative-refund allowance. A repeated request can also use a new operation identity and produce an unintended second refund.
+
+The intended user is the developer reviewing a refund decision component before a prompt, model or code change. PayPal's own refund guidance calls for cumulative tracking, idempotency and approval thresholds. PayProof turns selected rules into inspectable paired tests and retained payment evidence. Its external-agent contract evaluates proposed decisions; the harness performs the test payment operations. The [problem evidence and scope](problem-evidence.md) distinguish this workflow from broader agent benchmarks and production enforcement, and identify the customer-benefit claims still unmeasured.
 
 PayProof pairs eligible and ineligible scenarios, runs a documented teaching agent, a corrected reference, a live Codex decision component, or named/versioned external decisions, and checks the result against structured merchant policy. The PayPal adapter creates sandbox orders, captures approved payments, seeds controlled prior refunds and independently reads known refund IDs. The report distinguishes attempts, confirmed completion and unresolved evidence. AI can propose additional scenarios for human review.
 
