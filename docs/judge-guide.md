@@ -4,7 +4,12 @@ PayProof checks whether a proposed refund respects merchant policy while preserv
 
 ## Fresh source package
 
-Use Node.js 22 or later and npm on macOS or Linux. Extract the source ZIP or clone the published repository when available, then enter the `payproof` directory:
+Use Node.js 22 or later and npm on macOS or Linux. Clone [the public repository](https://github.com/Aniket-pd/payproof), then enter the `payproof` directory (or extract a source ZIP and enter its folder):
+
+```sh
+git clone https://github.com/Aniket-pd/payproof.git
+cd payproof
+```
 
 ```sh
 npm ci
@@ -51,4 +56,4 @@ In Test lab, run the broader approved suite. Pending payments and missing readba
 
 Actual PayPal Sandbox execution was observed on five fresh captures, including one two-case Codex batch. See [the verification record](sandbox-verification.md) and [exact exports](../examples/recorded-paypal/README.md). Optional fresh verification uses your own authorized account and buyer approval. Offline replay does not authenticate the historical provider claims.
 
-The public repository, final public YouTube video under three minutes, free live-AI judging access, entrant eligibility, and Devpost submission are separate checklist items. External developer feedback and measured business impact are still missing. See [submission preparation](submission.md), [the 2:38.5 script](demo-script.md), and [the current review](judging/2026-10-14-report.md). A [developer evaluation worksheet](developer-evaluation.md) is ready for outside participants; no responses have been collected.
+The public source and anonymous cloning are verified. [The initial Ubuntu CI run](https://github.com/Aniket-pd/payproof/actions/runs/38460136404) passed all 182 tests, build, offline evidence checks, packaging and presentation checks. The final public YouTube video under three minutes, free live-AI judging access, entrant eligibility, and Devpost submission remain separate checklist items. External developer feedback and measured business impact are still missing. See [submission preparation](submission.md), [the 2:38.5 script](demo-script.md), and [the current review](judging/2026-10-14-report.md). A [developer evaluation worksheet](developer-evaluation.md) is ready for outside participants; no responses have been collected.

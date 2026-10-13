@@ -5,9 +5,9 @@ This is a draft checklist, not a submitted entry. Recheck the [official rules](h
 ## Official requirements to satisfy
 
 - [x] Build a working application combining PayPal Sandbox with AI; actual two-case Codex + Sandbox run observed (see `sandbox-verification.md`).
-- [ ] Publish a public source repository with its open-source license, setup instructions and necessary assets.
-- [ ] Provide a functional hosted demo or complete instructions for running the project.
-- [ ] Supply an English project description explaining functionality and tools.
+- [x] Public source with MIT license, setup instructions and necessary assets: [Aniket-pd/payproof](https://github.com/Aniket-pd/payproof); anonymous cloning verified.
+- [x] Complete local setup instructions are publicly available in the README and judge guide. Fresh Ubuntu CI passes; no hosted live-AI demo is claimed.
+- [x] English functionality/tools description is available in this public source. The Devpost form itself remains unsubmitted.
 - [ ] Upload a publicly visible YouTube demonstration under three minutes showing the application working.
 - [ ] Provide free judging access and explain any required special access.
 - [ ] Confirm eligibility, ownership, third-party licenses and the final deadline against the rules.
@@ -29,8 +29,8 @@ The five criteriaâ€”implementation, design, impact, innovation and presentationâ
 - [x] Portable synthetic AI export and one-command judge reproduction: `npm run judge:verify`; see `judge-guide.md` for provenance limits.
 - [x] Source package: clean install, automated suite, TypeScript and production build verified; see `verification.md` for the final test count and evidence.
 - [ ] Customer or developer feedback collected; replace any hypothetical impact claim with evidence. The [participant worksheet](developer-evaluation.md) and [predefined evaluation guide](developer-evaluation-guide.md) are prepared; no sessions have been completed.
-- [ ] Public repository created and checked for secrets and generated account artifacts.
-- [x] Isolated public-source candidate and read-only, pinned CI prepared; clean installation and all workflow commands verified locally. Publication and remote CI remain pending.
+- [x] Public repository created; all 181 anonymously cloned files match the reviewed allowlist. Credentials and private runtime artifacts are excluded.
+- [x] Read-only, pinned CI passed on GitHub's Ubuntu runner: 182 tests, TypeScript/build, both offline reports, packaging and presentation checks. [Initial successful run](https://github.com/Aniket-pd/payproof/actions/runs/38460136404).
 - [x] Editable local 2:39 demonstration updated with app captures, recorded AI evidence, captions and separately labeled actual Sandbox results. See `presentation/README.md`.
 - [ ] Final actual-Sandbox demonstration published publicly on YouTube and checked in a signed-out browser.
 - [ ] Reviewer access arranged for optional live AI without publishing a subscription token or exposing the local authenticated server.
@@ -50,4 +50,4 @@ The initial scope is USD courtesy refunds and controlled fixtures. Seeded defect
 
 **Build disclosure:** Codex assisted development. Optional runtime AI uses the official OpenAI Codex SDK and local CLI authentication. PayPal integration uses Orders v2 and Payments v2 REST APIs; the interface uses React, TypeScript and Vite, with a Node/Express local server. No sponsor tool integration is claimed unless listed in the README.
 
-Before publishing, replace future/conditional language with verified observations where evidence exists. Add the actual repository URL, public video URL, final build instructions, and an honest account of what was built during the hackathon.
+Repository URL: [https://github.com/Aniket-pd/payproof](https://github.com/Aniket-pd/payproof). Before submitting the entry, add the public video URL, free judging-access arrangement, and an honest account of what was built during the hackathon. Keep unverified outcomes conditional.

@@ -4,11 +4,22 @@
 
 PayProof is a local developer application built for the PayPal AI Hackathon. It includes a working simulator, optional live AI through the official Codex SDK, and a PayPal Sandbox adapter. **Actual Sandbox execution was verified on 14 October IST:** the seeded defect produced $5 policy excess, both corrected controls passed, and a fresh two-case Codex run passed with independent PayPal readbacks. See the [verification record](docs/sandbox-verification.md) and [recorded exports](examples/recorded-paypal/README.md). Simulator replay remains explicitly separate from these historical provider observations.
 
+[Public source](https://github.com/Aniket-pd/payproof) · [Verification runs](https://github.com/Aniket-pd/payproof/actions/workflows/verify.yml) · [Judge guide](docs/judge-guide.md)
+
 The styled Quickstart is available at [http://127.0.0.1:4318/app?view=docs](http://127.0.0.1:4318/app?view=docs) while the local server is running.
 
 ## Run locally
 
-Requirements: Node.js 22 or later and npm on macOS or Linux. Windows has not been verified; the data-only Codex launcher uses a Unix executable script. Run these commands from this directory:
+Requirements: Node.js 22 or later and npm on macOS or Linux. Windows has not been verified; the data-only Codex launcher uses a Unix executable script.
+
+To obtain the source, clone the public repository and enter it, or extract a source ZIP:
+
+```sh
+git clone https://github.com/Aniket-pd/payproof.git
+cd payproof
+```
+
+From the project directory, install and launch:
 
 ```sh
 npm ci

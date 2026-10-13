@@ -1,6 +1,6 @@
 # Demonstration — 2 minutes 38.5 seconds
 
-**Updated 14 October 2026 IST. Actual PayPal Sandbox standard-processing flow is verified.** This edited local video combines saved app screenshots, observed results, generated stock narration and timed captions. Playback makes no model or payment call. Public repository, YouTube video, free live-AI judging access and external developer feedback remain unfinished.
+**Updated 14 October 2026 IST. Actual PayPal Sandbox standard-processing flow is verified.** This edited local video combines saved app screenshots, observed results, generated stock narration and timed captions. Playback makes no model or payment call. [Public source](https://github.com/Aniket-pd/payproof) is available with passing CI; YouTube video delivery, free live-AI judging access and external developer feedback remain unfinished.
 
 | Time | Visual | Claim and evidence |
 | --- | --- | --- |
@@ -17,4 +17,4 @@ The actual account evidence is in [Sandbox verification](sandbox-verification.md
 
 The memorable claim is concrete: **catch the tested failure, preserve the valid refund, and make the evidence inspectable.** No claim of production safety, loss prevention, adoption or model reliability is made.
 
-Editable scene timelines, inline captions, original audio and asset attribution are in [the presentation source](../presentation/README.md). Public source publication, YouTube upload, judging-access arrangements and Devpost submission remain separate unfinished actions.
+Editable scene timelines, inline captions, original audio and asset attribution are in [the presentation source](../presentation/README.md). Source publication is complete. YouTube upload, judging-access arrangements and Devpost submission remain separate unfinished actions.
