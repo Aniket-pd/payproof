@@ -9,7 +9,7 @@ This is a draft checklist, not a submitted entry. Recheck the [official rules](h
 - [x] Complete local setup instructions are publicly available in the README and judge guide. Fresh Ubuntu CI passes; no hosted live-AI demo is claimed.
 - [x] English functionality/tools description is available in this public source. The Devpost form itself remains unsubmitted.
 - [ ] Upload a publicly visible YouTube demonstration under three minutes showing the application working.
-- [ ] Provide free judging access and explain any required special access.
+- [x] Provide free local judging access: [Ollama + Qwen3 setup](local-ai-judging.md), fresh decisions and dashboard import, with no API key or paid account. Runtime/model download and local compute are required; no hosted service is claimed.
 - [ ] Confirm eligibility, ownership, third-party licenses and the final deadline against the rules.
 
 The five criteria—implementation, design, impact, innovation and presentation—are equally weighted. Sponsor tools are optional; claim a sponsor category only for a real integration. [Official rules](https://paypalaihackathon.devpost.com/rules)
@@ -33,10 +33,10 @@ The five criteria—implementation, design, impact, innovation and presentation�
 - [x] Read-only, pinned CI passed on GitHub's Ubuntu runner: 182 tests, TypeScript/build, both offline reports, packaging and presentation checks. [Initial successful run](https://github.com/Aniket-pd/payproof/actions/runs/38460136404).
 - [x] Editable local 2:39 demonstration updated with app captures, recorded AI evidence, captions and separately labeled actual Sandbox results. See `presentation/README.md`.
 - [ ] Final actual-Sandbox demonstration published publicly on YouTube and checked in a signed-out browser.
-- [ ] Reviewer access arranged for optional live AI without publishing a subscription token or exposing the local authenticated server.
+- [x] Fresh local AI available for reviewers through the published `judge:local` command and setup guide, without sharing subscription credentials.
 - [ ] Devpost form completed and explicitly submitted by the entrant.
 
-The simulator is available without an account. The new [local-model path](local-ai-judging.md) also generates fresh AI decisions without an account or API key, then brings its evidence into the dashboard. It requires Ollama, a model download and local compute. The direct Codex buttons still use an authorized local Codex account. PayPal Sandbox needs a free test app and buyer approval. The revised source must be published and verified before marking the new judging path publicly available.
+The simulator is available without an account. The published [local-model path](local-ai-judging.md) also generates fresh AI decisions without an account or API key, then brings its evidence into the dashboard. It requires Ollama, a model download and local compute. The direct Codex buttons still use an authorized local Codex account. PayPal Sandbox needs a free test app and buyer approval. Anonymous access to all 194 files of the revised source and [188-test CI](https://github.com/Aniket-pd/payproof/actions/runs/38463647640) are verified.
 
 ## Draft description
 
@@ -52,4 +52,4 @@ The initial scope is USD courtesy refunds and controlled fixtures. Seeded defect
 
 An additional local judging path uses Ollama with Qwen3 0.6B and requires no account or API key. Its first retained two-case response produced a $5 simulated policy excess and an inconclusive customer-message check. The result demonstrates detection on one small-model synthetic batch; it is not a benchmark or a production failure rate. The recorded Codex + actual PayPal Sandbox experiment remains separate.
 
-Repository URL: [https://github.com/Aniket-pd/payproof](https://github.com/Aniket-pd/payproof). Before submitting the entry, add the public video URL, free judging-access arrangement, and an honest account of what was built during the hackathon. Keep unverified outcomes conditional.
+Repository URL: [https://github.com/Aniket-pd/payproof](https://github.com/Aniket-pd/payproof). The judge-access instructions are [publicly available](https://github.com/Aniket-pd/payproof/blob/main/docs/local-ai-judging.md). Before submitting the entry, add the public video URL and an honest account of what was built during the hackathon. Keep unverified outcomes conditional.
