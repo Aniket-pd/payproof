@@ -28,7 +28,7 @@ The five criteriaâ€”implementation, design, impact, innovation and presentationâ
 - [x] Interrupted Sandbox execution evidence survives a forced process stop with mocked providers; actual PayPal execution remains a separate gate.
 - [x] Portable synthetic AI export and one-command judge reproduction: `npm run judge:verify`; see `judge-guide.md` for provenance limits.
 - [x] Source package: clean install, automated suite, TypeScript and production build verified; see `verification.md` for the final test count and evidence.
-- [ ] Customer or developer feedback collected; replace any hypothetical impact claim with evidence.
+- [ ] Customer or developer feedback collected; replace any hypothetical impact claim with evidence. The [participant worksheet](developer-evaluation.md) and [predefined evaluation guide](developer-evaluation-guide.md) are prepared; no sessions have been completed.
 - [ ] Public repository created and checked for secrets and generated account artifacts.
 - [x] Isolated public-source candidate and read-only, pinned CI prepared; clean installation and all workflow commands verified locally. Publication and remote CI remain pending.
 - [x] Editable local 2:39 demonstration updated with app captures, recorded AI evidence, captions and separately labeled actual Sandbox results. See `presentation/README.md`.

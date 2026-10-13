@@ -50,7 +50,7 @@ npm run judge:verify
 
 This creates fresh teaching controls, validates the bundled synthetic [recorded Codex evidence](examples/recorded-codex-proof.json), and re-evaluates its exact decisions locally. It reports the seeded $5 excess, the refusal control's missed legitimate refund, and 2/2 passes for both the corrected reference and the recorded decisions. It writes a report and four evidence exports under `artifacts/judge-check/` without reading or changing your saved workspace.
 
-No server, AI account, PayPal account, or new model request is needed. The packaged file's historical model/thread claims remain unauthenticated; replay verifies input binding and current simulated outcomes. Two curated cases are not a model benchmark. See the [judge guide](docs/judge-guide.md) for inspection commands and limits, and the [current evaluation](docs/judging/2026-10-13-final-report.md) for remaining submission gaps.
+No server, AI account, PayPal account, or new model request is needed. The packaged file's historical model/thread claims remain unauthenticated; replay verifies input binding and current simulated outcomes. Two curated cases are not a model benchmark. See the [judge guide](docs/judge-guide.md) for inspection commands and limits, and the [current evaluation](docs/judging/2026-10-14-report.md) for remaining submission gaps. The [developer evaluation worksheet](docs/developer-evaluation.md) provides a short, account-free way to give feedback; no outside sessions have been completed yet.
 
 ## Run the broader fixed AI challenge
 

@@ -1,4 +1,4 @@
-# Verification — updated 13 October 2026
+# Verification — updated 14 October 2026 IST
 
 ## Current checkpoint — 14 October 2026 IST
 
@@ -6,10 +6,12 @@ Actual Sandbox verification now covers five fresh captured orders with independe
 
 The sections below preserve earlier checkpoints; their unverified-Sandbox statements describe the state before this account verification. Public delivery and external developer feedback remain unfinished.
 
+Iteration 10 corrected the external-agent documentation to pass the schema-2 request to the agent and the separate schema-1 fixture to the evaluator. An actual local CLI dry run reproduced the old schema error and verified the corrected instructions: seeded decisions exit 1 with one failed case and $5 excess; corrected decisions exit 0 with 2/2 passing and the permitted $5 refund retained. This was a synthetic command check, not a human evaluation. The [participant worksheet](developer-evaluation.md) and [facilitator protocol](developer-evaluation-guide.md) are prepared; no outside responses exist. The refreshed 181-file package changes documentation only relative to the tested implementation.
+
 
 ## Current improvement run
 
-Six further focused iterations and iteration 7's public-source preparation are recorded in [the current progress log](judging/2026-10-13-progress.md) and [evaluation](judging/2026-10-13-final-report.md). This pass was implemented and assessed by the same agent; it is not an independent review panel. Historical reviews below retain their original dates and scope.
+Ten focused iterations are recorded in [the current progress log](judging/2026-10-13-progress.md) and [evaluation](judging/2026-10-14-report.md). This pass was implemented and assessed by the same agent; it is not an independent review panel. The detailed observations below preserve earlier checkpoints and their original scope.
 
 - **182 automated tests, TypeScript and the production build pass.** New checks cover the isolated three-control proof, real-AI request identity/reload recovery, failed and interrupted requests, malformed decisions, the portable judge command, and restoration of the Codex launcher after ZIP extraction. Latest clean log: `artifacts/improvement-2026-10-13/iteration7-revised-clean-check.log`.
 - Sandbox execution now persists a report before provider calls, retains request/response/readback events and completed cases, and stops on persistence failure. A controlled browser test killed the isolated server after one mocked refund response. Restart recovered the same inconclusive report and known IDs, with zero provider calls while viewing it. The fixture link, unconfirmed metrics, and 390px layout were verified. This is mocked-provider recovery evidence, not a successful PayPal Sandbox run. See `sandbox-recovery-report.json` and recovery screenshots under `artifacts/improvement-2026-10-13/`.
