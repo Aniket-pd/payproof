@@ -1,5 +1,12 @@
 # Verification — updated 13 October 2026
 
+## Current checkpoint — 14 October 2026 IST
+
+Actual Sandbox verification now covers five fresh captured orders with independently completed opening refunds, the seeded over-refund, both corrected controls, and a fresh two-case Codex batch. The seeded defect failed as intended; all four corrected/Codex cases passed with complete readbacks. Exact exports are in `examples/recorded-paypal/`; all four validate and replay offline with unchanged decisions/verdicts/amounts and Simulator provenance. No application-code change was needed. A fresh 179-file extraction passed 182 tests, TypeScript/build, both judge commands, the recorded Sandbox replay and presentation checks. The updated 4,755-frame MP4 is 158.507 seconds, fully decodes, and plays at ready state 4 without a media error. The prior policy, 27 scenarios and 57 runs are preserved. See [Sandbox verification](sandbox-verification.md) for IDs, evidence scope and limits.
+
+The sections below preserve earlier checkpoints; their unverified-Sandbox statements describe the state before this account verification. Public delivery and external developer feedback remain unfinished.
+
+
 ## Current improvement run
 
 Six further focused iterations and iteration 7's public-source preparation are recorded in [the current progress log](judging/2026-10-13-progress.md) and [evaluation](judging/2026-10-13-final-report.md). This pass was implemented and assessed by the same agent; it is not an independent review panel. Historical reviews below retain their original dates and scope.

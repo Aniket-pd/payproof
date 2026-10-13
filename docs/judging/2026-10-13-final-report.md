@@ -1,5 +1,7 @@
 # PayProof evaluation — 13 October 2026
 
+> Superseded for current integration status by [the 14 October checkpoint](2026-10-14-report.md); retained as the earlier assessment.
+
 PayProof now has a clearer, reproducible opening demonstration and a directly observable live-AI path. Its strongest moment is the side-by-side proof that both over-refunding and blanket refusal fail, while a valid refund remains usable. The current implementation is a polished local prototype with a substantial verifier. **First-place readiness is not yet established:** actual PayPal Sandbox evidence and external user validation remain missing.
 
 This assessment uses the [five equally weighted official criteria](https://paypalaihackathon.devpost.com/rules) on an internal ten-point scale. It was made by the implementing agent, not an independent panel; the numbers are estimates, not official scores or a winning probability. The [research report](2026-10-13-research.md) documents all 13 current judges, sourced professional work, explicitly inferred design implications, and related PayPal winners. No previous edition of this exact event was verified.

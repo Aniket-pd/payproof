@@ -49,6 +49,6 @@ In Test lab, run the broader approved suite. Pending payments and missing readba
 
 ## Remaining submission gates
 
-Actual PayPal Sandbox execution is unverified. The implemented adapter and mocked tests require an account-backed order approval → capture → refund → independent readback before the integration can be presented as verified. Follow [Sandbox verification](sandbox-verification.md).
+Actual PayPal Sandbox execution was observed on five fresh captures, including one two-case Codex batch. See [the verification record](sandbox-verification.md) and [exact exports](../examples/recorded-paypal/README.md). Optional fresh verification uses your own authorized account and buyer approval. Offline replay does not authenticate the historical provider claims.
 
 The public repository, final public YouTube video under three minutes, free live-AI judging access, entrant eligibility, and Devpost submission are separate checklist items. External developer feedback and measured business impact are still missing. See [submission preparation](submission.md), [the 2:45 script](demo-script.md), and [the current review](judging/2026-10-13-final-report.md).

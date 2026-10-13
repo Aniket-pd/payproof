@@ -4,7 +4,7 @@ This is a draft checklist, not a submitted entry. Recheck the [official rules](h
 
 ## Official requirements to satisfy
 
-- [ ] Build a working application combining PayPal Sandbox with AI; PayPal must be central.
+- [x] Build a working application combining PayPal Sandbox with AI; actual two-case Codex + Sandbox run observed (see `sandbox-verification.md`).
 - [ ] Publish a public source repository with its open-source license, setup instructions and necessary assets.
 - [ ] Provide a functional hosted demo or complete instructions for running the project.
 - [ ] Supply an English project description explaining functionality and tools.
@@ -19,7 +19,7 @@ The five criteriaâ€”implementation, design, impact, innovation and presentationâ
 - [x] MIT license included locally.
 - [x] Local setup and mode-specific instructions written.
 - [x] Seeded faults and evidence boundaries disclosed.
-- [ ] Actual PayPal Sandbox path verified with approved buyer and exported readback evidence.
+- [x] Actual PayPal Sandbox path verified with five fresh approved captures, three teaching-control cases and a two-case Codex batch; exact exports retained.
 - [x] Local Codex integration smoke-tested with ChatGPT sign-in, without an API key.
 - [x] Save genuine AI-generated candidates and an exported AI run for the final demonstration (local simulator payment evidence; see `verification.md`).
 - [x] One-action comparison of over-refund, blanket refusal and correct behavior on the same inputs, with saved case/export links.
@@ -31,7 +31,7 @@ The five criteriaâ€”implementation, design, impact, innovation and presentationâ
 - [ ] Customer or developer feedback collected; replace any hypothetical impact claim with evidence.
 - [ ] Public repository created and checked for secrets and generated account artifacts.
 - [x] Isolated public-source candidate and read-only, pinned CI prepared; clean installation and all workflow commands verified locally. Publication and remote CI remain pending.
-- [x] Editable local 2:38 demonstration rehearsal prepared with app captures, recorded real-AI evidence, captions and explicit Sandbox/mock disclosures. See `presentation/README.md`.
+- [x] Editable local 2:39 demonstration updated with app captures, recorded AI evidence, captions and separately labeled actual Sandbox results. See `presentation/README.md`.
 - [ ] Final actual-Sandbox demonstration published publicly on YouTube and checked in a signed-out browser.
 - [ ] Reviewer access arranged for optional live AI without publishing a subscription token or exposing the local authenticated server.
 - [ ] Devpost form completed and explicitly submitted by the entrant.
@@ -44,7 +44,7 @@ The simulator is available without an account. Full interactive AI uses an autho
 
 PayProof pairs eligible and ineligible scenarios, runs a documented teaching agent, a corrected reference, a live Codex decision component, or named/versioned external decisions, and checks the result against structured merchant policy. The PayPal adapter creates sandbox orders, captures approved payments, seeds controlled prior refunds and independently reads known refund IDs. The report distinguishes attempts, confirmed completion and unresolved evidence. AI can propose additional scenarios for human review.
 
-The opening comparison makes a critical distinction visible: a solution that refuses every customer also fails. A reviewer can reproduce the controls and re-evaluate bundled recorded AI decisions with one local command, without account access. A fresh inference is separately labeled and recorded. The current demonstration uses simulator payments; the actual PayPal account flow remains unverified.
+The opening comparison makes a critical distinction visible: a solution that refuses every customer also fails. A reviewer can reproduce the controls and re-evaluate bundled recorded AI decisions with one local command, without account access. A fresh inference is separately labeled and recorded. The opening comparison uses simulator payments. A separate observed Sandbox experiment reproduced the seeded $5 excess, passed both corrected controls, and passed a fresh two-case Codex batch with independent refund readbacks. Exact exports are included; replay does not authenticate their historical provider claims.
 
 The initial scope is USD courtesy refunds and controlled fixtures. Seeded defects demonstrate test sensitivity; they are not claims about model failure rates or PayPal vulnerabilities. Results do not certify production safety. The next validation step is to test the workflow with developers integrating their own refund agents and measure time to a useful reproducible failure.
 

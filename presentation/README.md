@@ -1,6 +1,6 @@
 # PayProof demonstration source
 
-Editable 1920×1080, 30 fps rehearsal: **4,739 frames / 2:37.967**. It combines real app screenshots, recorded synthetic evaluation evidence, generated stock narration and timed captions. Actual PayPal Sandbox execution remains unverified and is explicitly disclosed. This is a local review artifact; it has not been published to YouTube or submitted.
+Editable 1920×1080, 30 fps rehearsal: **4,755 frames / 2:38.500**. It combines real app screenshots, recorded synthetic evaluation evidence, generated stock narration and timed captions. The updated Sandbox scene uses screenshots of actual observed test results: seeded excess caught, corrected controls passed, and a fresh two-case Codex run passed with independent refund readbacks. This is a local review artifact; it has not been published to YouTube or submitted.
 
 From this directory:
 
@@ -23,4 +23,4 @@ Output: `out/payproof-demo.mp4`. `npm run captions` validates the source timing 
 
 The source audio and captions are already included. To regenerate captions, work in a disposable copy, install `@remotion/whisper-webgpu@4.0.535` plus its documented auxiliary dependencies, ensure FFmpeg is installed, then run `node scripts/transcribe.mjs`. The optional transcription stack is not needed to edit or render this video. Review spelling and timing, copy the new arrays into the scene nodes, and rerun `npm run captions` after editing.
 
-Before a final submission recording, complete actual Sandbox verification, replace the conditional integration segment with captured evidence, and update the closing. Preserve simulator, recorded-AI and mock labels. Retain all failed or inconclusive outcomes. See [asset attribution](NOTICE.md), [demo evidence](../docs/demo-script.md), and the [submission checklist](../docs/submission.md).
+The actual Sandbox verification is documented in the source package. Preserve simulator, recorded-AI, actual-Sandbox and mock labels. Public YouTube delivery and free judging access remain unfinished. Retain all failed or inconclusive outcomes. See [asset attribution](NOTICE.md), [demo evidence](../docs/demo-script.md), and the [submission checklist](../docs/submission.md).
